@@ -8,9 +8,13 @@ export const auth = defineAuth({
   loginWith: {
     email: true,
     externalProviders: {
+      google: {
+        clientId: secret('GOOGLE_CLIENTID'),
+        clientSecret: secret('GOOGLE_SECRET')
+      },
       loginWithAmazon: {
-        clientId: secret('amzn1.application-oa2-client.3ea04696df8440381a1774c5d751521'),
-        clientSecret: secret('amzn1.oa2-cs.v1.79b4b56049ce083a8c57a74ae9d4c047179d4976c996199562660248d032e985'),       
+        clientId: secret('AMAZON_CLIENTID'),
+        clientSecret: secret('AMAZON_SECRET'),       
         attributeMapping: {
           email: 'email'
         }
