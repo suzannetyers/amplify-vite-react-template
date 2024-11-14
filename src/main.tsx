@@ -7,11 +7,17 @@ import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
 import '@aws-amplify/ui-react/styles.css';
 
+import { signInWithRedirect } from "aws-amplify/auth"
+
 Amplify.configure(outputs);
+
+signInWithRedirect({
+  provider: { custom: "EverywareEntra" }
+})
 
 ReactDOM.createRoot(document.getElementById("root")!).render(  
   <React.StrictMode>
-    <Authenticator hideSignUp socialProviders={['amazon', 'google']}>
+    <Authenticator>
       <App />
     </Authenticator>
   </React.StrictMode>
