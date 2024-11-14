@@ -12,7 +12,7 @@ import { signInWithRedirect } from "aws-amplify/auth"
 Amplify.configure(outputs);
 
 signInWithRedirect({
-  provider: { custom: "EverywareEntra" }
+  provider: { custom: "EverywareEntra2" }
 })
 
 ReactDOM.createRoot(document.getElementById("root")!).render(  

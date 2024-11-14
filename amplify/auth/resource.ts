@@ -9,7 +9,7 @@ export const auth = defineAuth({
     email: true,
     externalProviders: {
       saml: {
-        name: 'EverywareEntra',
+        name: 'EverywareEntra2',
         metadata: {
           metadataContent: 'https://login.microsoftonline.com/530083c0-e368-4614-8d13-cb3ac9073740/federationmetadata/2007-06/federationmetadata.xml?appid=9306f21f-c48b-4ae7-a2df-35b5adcd879b', // or content of the metadata file
           metadataType: 'URL'
