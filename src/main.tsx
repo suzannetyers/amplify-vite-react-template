@@ -7,10 +7,10 @@ import '@aws-amplify/ui-react/styles.css';
 
 Amplify.configure(outputs);
 
-import AppOld from './App-old.tsx';
+import App from './App.tsx';
 
 ReactDOM.createRoot(document.getElementById("root")!).render(  
   <React.StrictMode>
-      <AppOld />
+      <App />
   </React.StrictMode>
 );
