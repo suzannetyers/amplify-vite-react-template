@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@aws-amplify/geo": "^3.0.63",
-    "@aws-amplify/ui-react": "^6.5.5",
+    "@aws-amplify/ui-react": "^6.7.2",
+    "@aws-amplify/ui-react-geo": "^2.0.34",
     "aws-amplify": "^6.10.3",
     "maplibre-gl": "^2.4.0",
     "maplibre-gl-js-amplify": "^4.0.2",
@@ -35,6 +36,7 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "tsx": "^4.7.2",
     "typescript": "^5.4.5",
-    "vite": "^5.4.10"
+    "vite": "^5.4.10",
+    "vite-plugin-node-polyfills": "^0.22.0"
   }
 }
